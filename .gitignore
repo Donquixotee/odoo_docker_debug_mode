@@ -1,0 +1,6 @@
+odoo-14.0/
+filestore/
+data/
+custom_addons/
+extra-addons/
+.env

@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Remote Attach",
+      "type": "python",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5678
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/odoo-14.0",
+          "remoteRoot": "/usr/lib/python3/dist-packages/odoo"
+        },
+        {
+          "localRoot": "${workspaceFolder}/extra-addons",
+          "remoteRoot": "/mnt/extra-addons"
+        }
+      ],
+      "justMyCode": false,
+      "preLaunchTask": "Restart Docker Compose",
+      "postDebugTask": "Stop Docker Compose"
+    }
+  ]
+}

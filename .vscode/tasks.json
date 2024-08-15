@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Restart Docker Compose",
+        "type": "shell",
+        "command": "${workspaceFolder}/.vscode/restart-docker-compose.sh",
+        "problemMatcher": [],
+        "isBackground": true,
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        },
+        "options": {
+          "cwd": "${workspaceFolder}"
+        }
+      },
+      {
+        "label": "Stop Docker Compose",
+        "type": "shell",
+        "command": "${workspaceFolder}/.vscode/stop-docker-compose.sh",
+        "problemMatcher": [],
+        "isBackground": false,
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared"
+        },
+        "options": {
+          "cwd": "${workspaceFolder}"
+        }
+      }
+    ]
+  }
+  
